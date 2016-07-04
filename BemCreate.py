@@ -10,7 +10,7 @@ except:
 
 BIN_PATH = join(sublime.packages_path(), dirname(realpath(__file__)), 'bem-tools-provider.js')
 
-class BemToolsCommand(sublime_plugin.TextCommand):
+class BemCreateCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		# Execute code with node.js
 		def node_exec(data):
