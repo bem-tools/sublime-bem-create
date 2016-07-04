@@ -16,4 +16,5 @@ Preference->Key Bindings User
 ```
 { "keys": ["ctrl+shift+c"], "command": "bem_create" }
 ```
-
+## Usage
+![gif](https://github.com/vladkhvo/bem-create-sublime-pligin/blob/master/demo.gif)
