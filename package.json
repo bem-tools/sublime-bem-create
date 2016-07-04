@@ -1,5 +1,5 @@
 {
-  "name": "bem-create-sublime-pligin",
+  "name": "sublime-bem-create",
   "version": "1.0.0",
   "description": "plugin is provider for bem-tools written on node.js",
   "main": "bem-tools-provider.js",
