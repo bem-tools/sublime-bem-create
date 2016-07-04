@@ -1,10 +1,11 @@
-# bem-create-sublime-pligin
+# sublime-bem-create
+
 
 ## Install
 ```
 # cd sublime-dir/Data/Package
 
-git clone https://github.com/vladkhvo/bem-create-sublime-pligin.git
+git clone https://github.com/vladkhvo/sublime-bem-create.git
 ```
 
 ## Usage
@@ -16,4 +17,4 @@ Preference->Key Bindings User:
 ```
 { "keys": ["ctrl+shift+c"], "command": "bem_create" }
 ```
-![gif](https://github.com/vladkhvo/bem-create-sublime-pligin/blob/master/demo.gif)
+![gif](https://github.com/vladkhvo/sublime-bem-create/blob/master/demo.gif)
