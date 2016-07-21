@@ -3,7 +3,7 @@
 
 ## Install
 ```
-# cd sublime-dir/Data/Package
+# cd PATH-TO-SUBLIME/Data/Package
 
 git clone https://github.com/vladkhvo/sublime-bem-create.git
 ```
