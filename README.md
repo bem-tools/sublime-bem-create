@@ -7,7 +7,7 @@
 # cd PATH-TO-SUBLIME/Data/Package
 
 #mac
-# cd /Applications/Sublime Text.app/Contents/MacOS/Packages
+cd /Users/khvostov/Library/Application Support/Sublime Text 3/Packages
 
 git clone https://github.com/vladkhvo/sublime-bem-create.git
 ```
