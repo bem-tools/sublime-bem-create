@@ -3,7 +3,11 @@
 
 ## Install
 ```
+#win
 # cd PATH-TO-SUBLIME/Data/Package
+
+#mac
+# cd /Applications/Sublime Text.app/Contents/MacOS/Packages
 
 git clone https://github.com/vladkhvo/sublime-bem-create.git
 ```
