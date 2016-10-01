@@ -1,6 +1,6 @@
 import sublime, sublime_plugin
 import json
-from os.path import dirname, realpath, join
+from os.path import dirname, realpath, join, expanduser
 
 try:
 	# Python 2
@@ -18,6 +18,10 @@ class BemCreateCommand(sublime_plugin.TextCommand):
 				node_bridge(data, BIN_PATH)
 			except Exception as e:
 				sublime.error_message('bem-create\n%s' % e)
-		# Open input and get user data, then use callback.
-		self.view.window().show_input_panel('Block name, path, techs', "{\"block\":{\"block\":\"khvostov\"},\"paths\":[\"home\"],\"techs\":[\"css\",\"js\", \"bemjson\"]}", node_exec, None, None)
+		# Show input panel and get data from user, then use callback.
+		def getData():
+			homeDirectory = expanduser('~')
+			configDefault = "{\"block\":{\"block\":\"khvostov\"},\"paths\":[\"%s\"],\"techs\":[\"css\",\"js\", \"bemjson\"]}" % (homeDirectory)
+			self.view.window().show_input_panel('Block name, path, techs', configDefault, node_exec, None, None)
 
+		getData()
