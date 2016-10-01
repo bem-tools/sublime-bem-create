@@ -1,0 +1,3 @@
+[
+	{ "keys": ["ctrl+alt+b+c"], "command": "bem_create" }
+]

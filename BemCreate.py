@@ -20,8 +20,12 @@ class BemCreateCommand(sublime_plugin.TextCommand):
 				sublime.error_message('bem-create\n%s' % e)
 		# Show input panel and get data from user, then use callback.
 		def getData():
-			homeDirectory = expanduser('~')
-			configDefault = "{\"block\":{\"block\":\"khvostov\"},\"paths\":[\"%s\"],\"techs\":[\"css\",\"js\", \"bemjson\"]}" % (homeDirectory)
-			self.view.window().show_input_panel('Block name, path, techs', configDefault, node_exec, None, None)
+			extract_variables = self.view.window().extract_variables()
+			file_path = extract_variables.get('file')
+			file_name = extract_variables.get('file_name')
+			folder_path = file_path[:-len(file_name)]
+			home_directory = expanduser('~')
+			config_default = "{\"block\":{\"block\":\"khvostov\"},\"paths\":[\"%s\"],\"techs\":[\"css\",\"js\", \"bemjson\"]}" % (folder_path or home_directory)
+			self.view.window().show_input_panel('Block name, path, techs', config_default, node_exec, None, None)
 
 		getData()
