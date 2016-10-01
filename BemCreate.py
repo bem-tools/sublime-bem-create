@@ -19,5 +19,5 @@ class BemCreateCommand(sublime_plugin.TextCommand):
 			except Exception as e:
 				sublime.error_message('bem-create\n%s' % e)
 		# Open input and get user data, then use callback.
-		self.view.window().show_input_panel('Block name, path, techs', "{\"block\":{\"block\":\"khvostov\"},\"paths\":[\"C:/path/to/ur/proj\"],\"techs\":[\"css\",\"js\", \"bemjson\"]}", node_exec, None, None)
+		self.view.window().show_input_panel('Block name, path, techs', "{\"block\":{\"block\":\"khvostov\"},\"paths\":[\"home\"],\"techs\":[\"css\",\"js\", \"bemjson\"]}", node_exec, None, None)
 
