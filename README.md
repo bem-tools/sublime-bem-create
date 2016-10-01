@@ -7,9 +7,9 @@
 # cd PATH-TO-SUBLIME/Data/Package
 
 #mac
-cd /Users/khvostov/Library/Application Support/Sublime Text 3/Packages
+cd /Users/USER-NAME/Library/Application Support/Sublime Text 3/Packages
 
-git clone https://github.com/vladkhvo/sublime-bem-create.git
+git clone https://github.com/bem-tools/sublime-bem-create.git
 ```
 
 ## Usage
@@ -21,4 +21,4 @@ Preference->Key Bindings User:
 ```
 { "keys": ["ctrl+shift+c"], "command": "bem_create" }
 ```
-![gif](https://github.com/vladkhvo/sublime-bem-create/blob/master/demo.gif)
+![gif](https://github.com/bem-tools/sublime-bem-create/blob/master/demo.gif)
