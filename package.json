@@ -2,7 +2,7 @@
   "name": "sublime-bem-create",
   "version": "1.0.0",
   "description": "provider for bem-tools-create written on node.js",
-  "main": "bem-tools-provider.js",
+  "main": "bem-create-provider.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,6 +14,6 @@
   },
   "devDependencies": {
     "get-stdin": "^5.0.1",
-    "bembem-tools-create": "1.0.0"
+    "bem-tools-create": "1.0.0"
   }
 }
