@@ -10,9 +10,9 @@ Creates `block` in the same directory as your open file. It's sublime provider f
 # cd PATH-TO-SUBLIME/Data/Package
 
 #mac
-# cd /Users/USER-NAME/Library/Application Support/Sublime Text 3/Packages
+cd '/Users/USERNAME/Library/Application Support/Sublime Text 3/Packages'
 
-# git clone https://github.com/bem-tools/sublime-bem-create.git
+git clone https://github.com/bem-tools/sublime-bem-create.git
 ```
 
 ## Usage
