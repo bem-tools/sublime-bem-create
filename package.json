@@ -1,13 +1,13 @@
 {
   "name": "sublime-bem-create",
   "version": "1.0.0",
-  "description": "plugin is provider for bem-tools written on node.js",
+  "description": "provider for bem-tools-create written on node.js",
   "main": "bem-tools-provider.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Vladislav Khvostov",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "install": "^0.8.1",
     "npm": "^3.10.3"
