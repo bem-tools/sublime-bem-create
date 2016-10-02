@@ -8,7 +8,7 @@ try:
 except:
 	from .node_bridge import node_bridge
 
-BIN_PATH = join(sublime.packages_path(), dirname(realpath(__file__)), 'bem-tools-provider.js')
+BIN_PATH = join(sublime.packages_path(), dirname(realpath(__file__)), 'bem-create-provider.js')
 
 class BemCreateCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
