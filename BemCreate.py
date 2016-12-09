@@ -25,7 +25,7 @@ class BemCreateCommand(sublime_plugin.TextCommand):
 			file_name = extract_variables.get('file_name')
 			folder_path = file_path[:-len(file_name)] if file_name is not None else ''
 			home_directory = expanduser('~')
-			config_default = "{\"block\":{\"block\":\"khvostov\"},\"paths\":[\"%s\"],\"techs\":[\"css\",\"js\", \"bemjson\"]}" % (folder_path or home_directory)
+			config_default = "{\"block\":{\"block\":\"blockName\"},\"paths\":[\"%s\"],\"techs\":[\"css\",\"js\", \"bemjson\"]}" % (folder_path or home_directory)
 			self.view.window().show_input_panel('Block name, path, techs', config_default, node_exec, None, None)
 
 		getData()
